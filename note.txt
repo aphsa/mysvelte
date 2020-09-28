@@ -1,0 +1,9 @@
+	{#each users as user}
+		<ul>
+			<li>{user.id} - {user.name}</li>
+			<li>{user.email}</li>
+		</ul>
+	{:else}
+		<!-- this block renders when users.length === 0 -->
+		<p>loading...</p>
+	{/each}
